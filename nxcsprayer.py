@@ -48,7 +48,7 @@ def execute_nxc(target_ip, username_file, password_file, lockout_count, lockout_
                 print(colored(ts_msg + f"Password is correct, but must be changed for {colored(username + ':' + password, 'yellow', attrs=['bold'])}", "cyan", attrs=['bold']))
                 skip_users.add(username)
             if b"STATUS_PASSWORD_EXPIRED" in output:
-                print(colored(ts_msg + f"Password is expired, but can be changed for for {colored(username + ':' + password, 'yellow', attrs=['bold'])}", "cyan", attrs=['bold']))
+                print(colored(ts_msg + f"Password is expired, but can be changed for  {colored(username + ':' + password, 'yellow', attrs=['bold'])}", "cyan", attrs=['bold']))
                 skip_users.add(username)
             if b"STATUS_LOGON_FAILURE" in output and (debug or verbose):
                 print(colored(ts_msg + f"Failed login for {username + ':' + password}", "red", attrs=['bold']))
