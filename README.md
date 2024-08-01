@@ -46,3 +46,8 @@ Arguments:
 ```
 python nxcsprayer.py --target-ip 192.168.1.100 --username-file users.txt --password-file passwords.txt --lockout-count 3 --lockout-timeout 30 --verbose --timestamp
 ```
+
+## TODO
+
+- output valid creds into a file
+- check for connectivity issues, abort if found any
